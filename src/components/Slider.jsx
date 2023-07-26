@@ -8,7 +8,7 @@ const data = [
   {
     id: 1,
     title: "welcome to ",
-    span: "Love 'N care",
+    span: "Love 'N' care",
     info: "At Love 'n' care, we take pride in offering a safe and supportive environment where children can learn, grow, and play together.Our experienced caregivers are dedicated to nurturing your child's development and creating unforgettable memories.",
     image: slide1,
   },

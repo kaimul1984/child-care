@@ -73,8 +73,8 @@ const Topbar = () => {
   ];
 
   return (
-    <div className="w-full min-h-20 py-6 flex items-center justify-center bg-white">
-      <div className="w-[95%] max-w-[1420px] flex gap-6 flex-wrap justify-between items-center">
+    <div className="w-full min-h-20 py-6 flex items-center justify-center bg-lime-300">
+      <div className="w-[95%] max-w-[1420px] flex gap-2 flex-wrap justify-between items-center">
         {topBarData.map((item, index) => (
           <div
             key={index}

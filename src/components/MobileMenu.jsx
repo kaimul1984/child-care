@@ -3,7 +3,7 @@ import navLinks from "../assets/data/mobileData";
 
 const MobileMenu = ({ open, setOpen }) => {
   return (
-    <div className="bg-red-500 text-white absolute left-0 top-20 w-full h-[calc(100vh-5rem)] flex flex-col gap-8 items-center justify-center text-3xl z-10">
+    <div className="bg-red-500 text-white absolute left-0 top-[200px] w-full h-[calc(100vh-5rem)] flex flex-col gap-8 items-center justify-center text-3xl z-10">
       {navLinks.map((item) => (
         <a
           href={item.link}

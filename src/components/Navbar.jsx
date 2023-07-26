@@ -32,10 +32,14 @@ const navLinks = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="w-full h-20 bg-green-300 flex items-center justify-center ">
+    <div className="w-full h-20 bg-white flex items-center justify-center ">
       <div className="w-[95%] max-w-[1420px] flex items-center justify-between ">
-        <div className="logo text-[2rem] text-blue-700 font-bold ">
-          love n care
+        <div className="logo flex items-center">
+          <img src="/logo.svg" alt="" className="w-24 h-20 ml-[-20px]" />
+          <span className="text-red-500 font-bold text-[1.5rem] ml-[-20px] md:text-4xl">
+            {" "}
+            love n care
+          </span>
         </div>
 
         <div className=" hidden md:static md:w-max  md:flex max-md:items-center md:gap-10 md:justify-center md:h-full ">

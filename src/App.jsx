@@ -4,6 +4,7 @@ import Slider from "./components/Slider";
 import AboutUs from "./components/AboutUs";
 import OurDailyRoutine from "./components/OurDailyRoutine";
 import Topbar from "./components/Topbar";
+import Gallaries from "./components/Gallaries";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Slider />
       <AboutUs />
       <OurDailyRoutine />
+      <Gallaries/>
     </>
   );
 };
