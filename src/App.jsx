@@ -3,14 +3,16 @@ import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 import AboutUs from "./components/AboutUs";
 import OurDailyRoutine from "./components/OurDailyRoutine";
+import Topbar from "./components/Topbar";
 
 const App = () => {
   return (
     <>
+      <Topbar />
       <Navbar />
       <Slider />
-      <AboutUs/>
-      <OurDailyRoutine/>
+      <AboutUs />
+      <OurDailyRoutine />
     </>
   );
 };

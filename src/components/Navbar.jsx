@@ -66,7 +66,7 @@ const Navbar = () => {
             />
           )}
         </div>
-        <button className="px-3 py-2 text-xl font-bold rounded-md bg-green-800 text-white hidden md:block">
+        <button className="px-3 py-2 text-xl font-bold rounded-md bg-red-500 text-white hidden md:block">
           Enrol now
         </button>
       </div>
