@@ -1,12 +1,15 @@
-import React from 'react'
+import React from "react";
 
-
-const SinglePhoto = ({item}) => {
+const SinglePhoto = ({ item }) => {
   return (
-    <div className='w-screen md:w-[350px] h-[350px]'>
-        <img src={item.image} alt={item.image} className='w-full h-full object-cover block rounded-md' />
+    <div className="w-screen md:w-[350px] h-[350px]" key={item.id}>
+      <img
+        src={item.image}
+        alt={item.image}
+        className="w-full h-full object-cover block rounded-md"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default SinglePhoto
+export default SinglePhoto;

@@ -8,10 +8,94 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
 }
 
 body {
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
   /* //overflow: hidden; */
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+/* START: General styles */
+.max-width {
+  @apply w-[95%] max-w-[1440px];
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+
+.after {
+  @apply after:absolute after:content-[''] after:w-14 after:h-1 after:left-[50%] after:translate-x-[-50%] after:bottom-2 after:bg-red-600;
+}
+/* END: General styles */
+/* gallery animation */
+/* Add this in your CSS file or Tailwind CSS configuration */
+@keyframes fadeIn {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0;
+  }
+}
+
+/* Add this if you want to apply the fade-in effect on page change */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Add this if you want to apply the fade-out effect on page change */
+.animate-fade-out {
+  animation: fadeOut 1s ease-in-out;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+}
+.section {
+  width: 100%;
+  position: relative;
+  top: 144px;
+}
+.section > * {
+  width: 100vw;
+  z-index: 111;
 }
